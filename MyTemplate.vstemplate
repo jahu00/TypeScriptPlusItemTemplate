@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>TypeScriptPlus.ts</DefaultName>
+    <Name>TypeScriptPlus</Name>
+    <Description>Adds both TypeScript file and the JavaScript which it generates. This allows for copying the TS generated JS file to output directory.</Description>
+    <ProjectType>CSharp</ProjectType>
+	<ProjectSubType>Web</ProjectSubType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.ts" ReplaceParameters="true">file1.ts</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.ts/$fileinputname$.js" ReplaceParameters="true">file1.js</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
